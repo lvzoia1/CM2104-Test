@@ -15,6 +15,16 @@ header, section, article, nav, aside, footer, div {
   margin: 10px;
 }
 
+header img {
+  display: inline-block;
+  font-size: 200px;
+
+}
+
+header h1 {
+  display: inline-block;
+}
+
 #SiteLogo {
   width: 15%;
   height: 30%;
@@ -25,37 +35,67 @@ header, section, article, nav, aside, footer, div {
 
 nav{
   background-color: CCC;
+
 }
 
 nav li{
+  display: inline-block;
   background-color: BBB;
   width: 20%;
-  display: inline-block;
   border: 1px;
   border-style: solid;
   border-color: 333;
 }
 
-#Content1 {
+#Section1 {
   background-color: CCC;
-  width: 70%;
+  width: 98%;
+  height: 100%;
+}
+
+#Content1 {
+  width: 60%;
+  height: 84%;
+  float: left;
 
 }
 
 #Para1 {
-  width: 60%;
-  height: 60%;
-  border: 5px;
+  background-color: BBB;
+  width: 90%;
+  height: 80%;
+  border: 1px;
   padding: 10px;
   margin: 10px;
-  background-color: BBB;
 }
 
 #P1 {
-  width: 60%;
+  background-color: BBB;
+  width: 90%;
   height: 10%;
-  border: 5px;
+  border: 1px;
   padding: 10px;
   margin: 10px;
+}
+
+#Content2 {
+  background-color: CCC;
+  width: 34%;
+  height: 84%;
+  border-style: dotted;
+  float: right;
+}
+
+.BlogPostThumb img {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+}
+
+.BlogPostThumb {
   background-color: BBB;
+  float: right;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
 }
