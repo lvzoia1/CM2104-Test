@@ -1,9 +1,3 @@
-
-
-
-function goAgain(time) {
-    if (lastTime != null){
-       onclick
-    }
+function goAgain() {
+document.getElementById('id1').style.color = 'Yellow';
 }
-requestAnimationFrame(animate);
