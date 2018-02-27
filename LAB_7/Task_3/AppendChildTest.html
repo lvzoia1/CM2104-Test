@@ -8,13 +8,24 @@
    <p>Skittles</p>
    <p>Fear</p>
    <p>Anger</p>
+
    <script>
+
+  //change order of the paragraphs
      var paragraphs = document.body.getElementsByTagName("p");
      document.body.insertBefore(paragraphs[2], paragraphs[0]);
+
+//append
      var newPara = document.createElement("p");
      var text = document.createTextNode("A Jedi craves not these things");
      newPara.appendChild(text);
      document.body.appendChild(newPara);
+
+// replace
+    var repPara = document.body.getElementsByTagName("p")[1];
+    var newText = document.createTextNode("Aggression");
+    document.body.replaceChild(newText, repPara);
+
    </script>
   </body>
 </html>
