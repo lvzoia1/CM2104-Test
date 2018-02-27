@@ -1,4 +1,4 @@
-function main () {
+/*function main () {
 	var a, b;
 	var c;
 
@@ -10,29 +10,18 @@ function main () {
 
 	document.writeln(c);
 }
+*/
 
-document.getElementById();
-searchbox = ???;
+ function main () {
+ 	var a;
+  var b;
+ 	var c;
 
-searchvalue = ???;
+ 	a = 10;
+ 	b = 100;
 
-if (???) {
- 	return true;
-}
- else {
- 	alert("please type a search query!");
- 	return false;
-}
+	b = a + b;
+ 	c = a * b;
 
-// function main () {
-// 	var a, b;
-// 	var c;
-//
-// 	a = 10;
-// 	b = 100;
-//
-// 	b = a + b;
-// 	c = a * b;
-//
-// 	document.writeln(c);
-// }
+ 	document.writeln(c);
+ }

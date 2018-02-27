@@ -7,15 +7,16 @@
 		</title>
 		<script>
 		function validate() {
-
+			var search;
 			// 1. get a reference to the searchbox
 			//    using the DOM api method document.getElementById();
 			// searchbox = ???;
 
+			search = document.getElementById('searchbox');
 			// 2. get the value of the searchbox
 			//    using the DOM api value property of an element
 			// searchvalue = ???;
-
+			var searchvalue = search.value;
 			// 3. test if the value is not equal to an empty string ("")
 			// if (???) {
 			// 	return true;
@@ -24,6 +25,15 @@
 			// 	alert("please type a search query!");
 			// 	return false;
 			// }
+
+			if (searchvalue != "") {
+			 	return true;
+			}
+
+			 else {
+			 	alert("please type a search query!");
+			 	return false;
+			}
 		}
 		</script>
 	</head>
