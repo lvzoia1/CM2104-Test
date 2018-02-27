@@ -1,4 +1,3 @@
-
 function addContent () {
 	item = "hewey";
 	item = "dewey";

@@ -2,10 +2,13 @@
 <html>
   <body>
     <h1 id="id1">My Heading 1</h1>
-    <button type="button" onclick="document.getElementById('id1').style.color =
-    'red';">
+
+<!-- turn the header red -->
+    <button type="button" onclick="document.getElementById('id1').style.color ='red';">
      Click Me!
     </button>
+
+<!-- turn the header blue -->
     <button type="button" onclick="go()">
      Click Me Too!
     </button>
@@ -14,9 +17,17 @@
      document.getElementById('id1').style.color = 'blue';
      }
     </script>
-    <script src="myscript.js"></script>
+
+<!-- turn the header yellow -->
+
     <button type="button" onclick="goAgain()">
-     Click Me for yellow!
+     Click Me for Yellow!
     </button>
+    <script>
+      function go() {
+      document.getElementById('id1').style.color = 'yellow';
+      }
+    </script>
+
   </body>
 </html>
