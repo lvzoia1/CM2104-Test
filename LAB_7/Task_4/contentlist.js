@@ -10,7 +10,7 @@ function addContent () {
 	for (var i=0; i < items.length; i++) {
 		item = items[i];
 		items_html += "<li>" + item + "</li>";
-	};
+	}
 	items_html += "</ul>";
 
 	// using javascript
