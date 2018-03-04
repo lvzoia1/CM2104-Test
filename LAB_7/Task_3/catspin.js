@@ -2,6 +2,7 @@
  * Created by john on 10/03/2016.
  */
 
+
 var cat = document.querySelector("img");
 var angle = 0, lastTime = null;
 function animate(time) {
