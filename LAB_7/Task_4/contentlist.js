@@ -16,5 +16,11 @@ function addContent () {
 	// using javascript
 	// 1. find the content div
 	// 2. modify its html attribute by adding items_html
-
+	function goAgain () {
+		document.getElementById('content');
+		var newPara = document.createElement("p");
+		var text = document.createTextNode(items_html);
+		newPara.appendChild(text);
+		document.body.appendChild(newPara);
+	}
 }
