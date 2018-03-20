@@ -1,8 +1,8 @@
 var http = require('http');
-var knockknock = require (‘knock-knock-jokes’);
+var oneLinerJoke = require ('one-liner-joke');
 
 http.createServer(function (req, res) {
    res.writeHead(200, {'Content-Type': 'text/html'});
-   var randomJoke = knockknock();
-   res.end(randomJoke);
+   var randomJoke = oneLinerJoke.getRandomJoke();
+   res.end(randomJoke.body);
 }).listen(8080);
