@@ -1,10 +1,10 @@
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/star_wars_quotes";
 const express = require('express');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 const app = express();
 
-app.use(express.static('public'))
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}))
 var db;
 
