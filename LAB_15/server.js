@@ -18,9 +18,7 @@ MongoClient.connect(url, function(err, database){
 app.get('/all', function(req, res) {
    db.collection('quotes').find().toArray(function(err, result) {
      if (err) throw err;
-
      var output = "<h1>All the quotes</h1>";
-
      for (var i = 0; i < result.length; i++) {
        output += "<div>"
        output += "<h3>" + result[i].name + "</h3>"
@@ -38,3 +36,24 @@ app.post('/quotes', function (req, res) {
      res.redirect('/')
    })
 })
+
+app.post('/search', function(req, res) {
+   db.collection('quotes').find(req.body).toArray(function(err, result) {
+     if (err) throw err;
+     var output = "<h1>All the quotes</h1>";
+     for (var i = 0; i < result.length; i++) {
+       output += "<div>"
+       output += "<h3>" + result[i].name + "</h3>"
+       output += "<p>" + result[i].quote + "</p>"
+       output += "</div>"
+     }
+     res.send(output);
+   });
+});
+
+app.post('/delete', function(req, res) {
+   db.collection('quotes').deleteOne(req.body, function(err, result) {
+     if (err) throw err;
+     res.redirect('/');
+   });
+});
